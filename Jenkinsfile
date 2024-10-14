@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        text name: 'DEPLOY_ENV', description: 'Введите переменные окружения в формате ключ=значение'
+        text (name: 'DEPLOY_ENV', description: 'Введите переменные окружения в формате ключ=значение')
     }
     stages {
         stage('Set Environment Variables') {
