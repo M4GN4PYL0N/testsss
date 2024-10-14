@@ -1,6 +1,7 @@
 pipeline {
     agent any
     parameters {
+        booleanParam (name: 'attach_arch_repo', defaultValue: false, description: 'Подключить арх.репозиторий из проекта https://bitbucket.seaf.su/fgnlhQpcTF06DpkUNpxJ/projects/CIT')
         text (name: 'DEPLOY_ENV', description: 'Введите переменные окружения в формате ключ=значение')
     }
     stages {
